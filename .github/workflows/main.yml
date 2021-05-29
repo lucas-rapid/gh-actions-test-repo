@@ -25,12 +25,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
       - name: RapidAPI Testing Trigger
-        uses: RapidAPI/gh-api-testing-trigger@status_enhancements
+        uses: RapidAPI/gh-api-testing-trigger@v0.0.2
         id: tstExec
         with:
           test: 'test_0127a44a-106e-4ffc-8c7b-ae7ce91e347d'
