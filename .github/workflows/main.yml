@@ -35,7 +35,6 @@ jobs:
         with:
           test: 'test_0127a44a-106e-4ffc-8c7b-ae7ce91e347d'
           location: 'AWS-US-WEST-2'
-
       - name: Show Results
         run: echo "The test took ${{ steps.tstExec.outputs.time }}ms to run"; echo "The test result was ${{ steps.tstExec.outputs.computedStatus }}"; echo "View Report - ${{ steps.tstExec.outputs.reportUrl }}"
 
