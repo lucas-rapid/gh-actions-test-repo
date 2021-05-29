@@ -30,7 +30,7 @@ jobs:
         run: echo Hello, world!
 
       - name: RapidAPI Testing Trigger
-        uses: RapidAPI/gh-api-testing-trigger@master
+        uses: RapidAPI/gh-api-testing-trigger@status_enhancements_fix
         id: tstExec
         with:
           test: 'test_0127a44a-106e-4ffc-8c7b-ae7ce91e347d'
